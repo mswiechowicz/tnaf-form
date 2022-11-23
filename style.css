@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+main {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+
+.contactForm {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.formTitle {
+    color: #ff5a00;
+    margin: 15px 0;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.rowLabel {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    gap: 10px;
+    padding-right: 15px;
+    margin: 10px 0;
+    font-size: 14px;
+    color: #ff5a00;
+}
+
+.thirdRowLabel {
+    width: 33%;
+}
+
+.input {
+    padding: 13px 22px;
+    border: 1px solid #DDE3EC;
+    border-radius: 5px;
+    background: #FFFFFF;
+    font-weight: 500;
+    font-size: 16px;
+    color: #07074D;
+    outline-color: #ff5a00;
+    resize: none;
+}
+
+.inputRadioRow,
+.inputCheckboxRow,
+.textareaRow {
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.fieldset {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-right: 15px;
+    font-size: 14px;
+    border: none;
+}
+
+.buttonRow {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.button {
+    text-align: center;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 14px 25px;
+    border: none;
+    font-weight: 500;
+    background-color: #ff5a00;
+    color: white;
+    cursor: pointer;
+    transition: all ease-in-out 0.1s;
+}
+
+.button:hover {
+    background-color: #ff7b33;
+    scale: 1.05;
+}
+
+
+.buttonReset {
+    width: 28%;
+}
+
+.buttonSubmit {
+    width: 70%;
+}
+
+@media screen and (max-width: 768px) {
+    .thirdRowLabel {
+        width: 100%;
+    }
+
+    .fieldset label {
+        width: 50%;
+        padding: 5px;
+    }
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML & CSS | Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main>
+    <form class="contactForm" action="" method="POST">
+      <h1 class="formTitle">Employment Form</h1>
+      <section class="row">
+        <label class="rowLabel">
+          <span>First name</span>
+          <input class="input" type="text" name="firstName" placeholder="Jan" required>
+        </label>
+        <label class="rowLabel">
+          <span>Last name</span>
+          <input class="input" type="text" name="lastName" placeholder="Kowalski" required>
+        </label>
+      </section>
+      <section class="row">
+        <label class="rowLabel thirdRowLabel">
+          <span>E-mail</span>
+          <input class="input" type="email" name="email" placeholder="jk@gamil.com" required>
+        </label>
+        <label class="rowLabel thirdRowLabel">
+          <span>Phone</span>
+          <input class="input" type="tel" name="phone" placeholder="505 505 505" pattern="[0-9]{3} [0-9]{3} [0-9]{3}" required>
+        </label>
+        <label class="rowLabel thirdRowLabel">
+          <span>Date of birth</span>
+          <input class="input" type="date" name="birthdate" placeholder="dd.mm.rrrr" max="2022-11-14" required>
+        </label>
+      </section>
+      <section class="row">
+        <label class="rowLabel">
+          <span>Gender</span>
+          <select name="gender" class="input" required>
+            <option selected disabled hidden></option>
+            <option value="male">male</option>
+            <option value="female">female</option>
+          </select>
+        </label>
+      </section>
+      <section class="row inputRadioRow">
+        <p class="rowLabel">What are you looking for</p>
+        <fieldset class="fieldset">
+          <label>
+            <input type="radio" name="jobtitle" required>
+            Software Engineer
+          </label>
+          <label>
+            <input type="radio" name="jobtitle" required>
+            UX Designer
+          </label>
+          <label>
+            <input type="radio" name="jobtitle" required>
+            Analytics Specialist
+          </label>
+          <label class="fieldsetLabel">
+            <input type="radio" name="jobtitle" required>
+            Project Manager
+          </label>
+          </div>
+      </section>
+      <section class="row inputCheckboxRow">
+        <p class="rowLabel">Which programming languages do you know?</p>
+        <fieldset class="fieldset">
+          <label class="fieldsetLabel">
+            <input type="checkbox" name="role">
+            Java
+          </label>
+          <label class="fieldsetLabel">
+            <input type="checkbox" name="role">
+            Javascript
+          </label>
+          <label class="fieldsetLabel">
+            <input type="checkbox" name="role">
+            C#
+          </label>
+          <label class="fieldsetLabel">
+            <input type="checkbox" name="role">
+            Kotlin
+          </label>
+          <label class="fieldsetLabel">
+            <input type="checkbox" name="role">
+            Python
+          </label>
+          <label class="fieldsetLabel">
+            <input type="checkbox" name="role">
+            Scala
+          </label>
+          </div>
+      </section>
+      <section class="row textareaRow">
+        <p class="rowLabel">Message</p>
+        <textarea rows="6" name="message" id="message" placeholder="Type your message" class="input" required></textarea>
+      </section>
+      <section class="row buttonRow">
+        <button class="button buttonReset" type="reset">Reset</button>
+        <button class="button buttonSubmit" type="submit">Submit</button>
+      </section>
+    </form>
+  </main>
+</body>
+</html>
